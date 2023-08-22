@@ -1,6 +1,10 @@
 import express from 'express';
 import expressSession from 'express-session';
 import cors from 'cors';
+import pool from './services/pgClient.js';
+import connect_pg_simple from 'connect-pg-simple';
+
+const pgSession = connect_pg_simple(expressSession);
 
 const app = express();
 
@@ -11,16 +15,24 @@ import { apiRouter } from './api/routers/router.js';
 import { swaggerRouter } from './swagger/routers/swagger.router.js';
 import { errorHandling } from './services/error/errorHandling.js';
 
+
+
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 app.use(expressSession({
-    resave: true,
+    store: new pgSession({
+        pool: pool,
+        tableName: 'user_sessions',
+        createTableIfMissing: true
+    }),
+    resave: false,
     saveUninitialized: true,
     secret: 'Guess it!',
     cookie: {
-        secure: true,
-        maxAge: (1000*60*60)
+        // secure: true,
+        maxAge: (1000*60*60),
+        // sameSite: 'none'
     }
 }));
 
