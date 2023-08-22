@@ -19,7 +19,7 @@ app.use(expressSession({
     saveUninitialized: true,
     secret: 'Guess it!',
     cookie: {
-        secure: false,
+        secure: true,
         maxAge: (1000*60*60)
     }
 }));
