@@ -1,5 +1,38 @@
 # Projet O'Harvest
 
+## Technologies used
+
+Back-office
+
+![image](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![image](https://img.shields.io/badge/Ejs-b4ca65?style=for-the-badge&logo=ejs&logoColor=white)
+![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+
+Backend :
+
+![image](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white)
+![image](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![image](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
+![image](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=white)
+
+Script :
+
+![image](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
+
+## Demo
+
+A demo of the site is available [here](https://oharvest-352271be3541.herokuapp.com/)
+
+You need an account to play with :
+
+- User : tata@test.io or toto@test.io
+- Password : oharvest (same password for each)
+
+Some information: 
+
+- The user creation and reset password are not existent. 
+- The site is not responsive. It wasn't our priority during the development. It is used as a backoffice for our projet during the last month of the school formation
+
 ## Install
 
 This project require the Docker engine. 
