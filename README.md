@@ -25,7 +25,7 @@ A demo of the site is available [here](https://oharvest-352271be3541.herokuapp.c
 
 You need an account to play with :
 
-- User : tata@test.io or toto@test.io
+- User : test@oharvest.io or admin@oharvest.io
 - Password : oharvest (same password for each)
 
 Some information: 

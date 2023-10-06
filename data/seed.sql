@@ -75,8 +75,8 @@ VALUES
 INSERT INTO
     employee (mail, password, firstname, lastname)
 VALUES
-    ('toto@test.io', '$2b$10$1Zy6wcGdUh3TCjhlgg8JKetQ95vB/rdXZfSzgKeS5Un2smYg21imK', 'toto', 'test'),
-    ('tata@test.io', '$2b$10$1Zy6wcGdUh3TCjhlgg8JKetQ95vB/rdXZfSzgKeS5Un2smYg21imK', 'tata', 'test');
+    ('admin@oharvest.io', '$2b$10$1Zy6wcGdUh3TCjhlgg8JKetQ95vB/rdXZfSzgKeS5Un2smYg21imK', 'admin', 'test'),
+    ('test@oharvest.io', '$2b$10$1Zy6wcGdUh3TCjhlgg8JKetQ95vB/rdXZfSzgKeS5Un2smYg21imK', 'test', 'test');
 
 INSERT INTO
     booking (booking_at, visit_at, slot, name, contact, phone, mail, address, city, zipcode, student_number, group_number, guide_number, transport, status)
